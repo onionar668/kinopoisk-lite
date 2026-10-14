@@ -1,0 +1,12 @@
+name: kinopoisk-lite
+recipe: lamp
+config:
+  webroot: public
+  php: '8.2'
+  database: mariadb:10.6
+
+services:
+  pma:
+    type: phpmyadmin
+    hosts:
+      - database
